@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Company Profile</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="fixed-header">
+        <nav class="navbar">
+            <div class="logo">CompanyLogo</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Company</h1>
+            <p>Innovating solutions for a better future</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Our company is dedicated to providing innovative solutions to help businesses grow. With over 10 years of experience, we specialize in technology, consulting, and marketing services that drive success.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-card animate-on-scroll">
+                <h3>Service 1</h3>
+                <p>We provide innovative technology solutions.</p>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <h3>Service 2</h3>
+                <p>We deliver world-class consulting services.</p>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <h3>Service 3</h3>
+                <p>We offer creative marketing strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member animate-on-scroll">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Jane Smith</h3>
+                <p>Marketing Head</p>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Mark Lee</h3>
+                <p>Lead Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Get in touch with us!</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://t.me/yourusername" target="_blank" class="social-icon telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Company. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
