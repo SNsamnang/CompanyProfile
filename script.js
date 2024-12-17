@@ -38,3 +38,46 @@ navLinks.forEach(link => {
         navbar.classList.remove('active');  // Remove the 'active' class to hide nav-links
     });
 });
+
+// Select all navigation links
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        // Remove 'active' class from all links
+        navLinks.forEach(nav => nav.classList.remove('active'));
+
+        // Add 'active' class to the clicked link
+        this.classList.add('active');
+    });
+});
+
+
+(function () {
+    emailjs.init("fFf8rz3Uv-a41Po1s"); // Replace with your EmailJS Public Key
+})();
+
+// Handle Form Submission
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Send email using EmailJS
+    emailjs.send("service_dt5sbfb", "template_ey0icma", {
+        name: name,
+        email: email,
+        message: message,
+    }).then(
+        function (response) {
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset();
+            console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+            alert("Failed to send message. Please try again later.");
+            console.error("FAILED...", error);
+        }
+    );
+});
