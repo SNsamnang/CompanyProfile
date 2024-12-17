@@ -42,7 +42,7 @@ body {
 }
 
 .navbar .nav-links li {
-    margin-left: 20px;
+    padding: 0px 1px;
 }
 
 .navbar .nav-links li a {
@@ -50,10 +50,14 @@ body {
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
+    padding: 10px 30px;
+
 }
 
 .navbar .nav-links li a:hover {
-    color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
 }
 
 .hamburger {
@@ -74,8 +78,8 @@ body {
     background: linear-gradient(to right, #4CAF50, #2196F3);
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    margin-top: 80px;  /* To prevent overlap with fixed header */
+    padding: 80px 20px;
+    margin-top: 68px;  /* To prevent overlap with fixed header */
 }
 
 .hero h1 {
@@ -292,9 +296,35 @@ footer {
         top: 60px;
         right: 0;
         background-color: #333;
-        width: 200px;
-        padding: 20px;
+        width: 40vh;
+        height: 50vh;
+        /* padding: 20px; */
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+    }
+    .nav-links li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        text-align: center;
+
+    }
+    .nav-links a.active {
+        background-color: #4CAF50;
+        width: 100%; /* Expand to full width */
+        display: block; /* Ensure it behaves like a block element */
+        padding: 10px 0; /* Adjust padding for visual appeal */
+        text-align: center; /* Center-align text */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        color: white; /* Ensure text is visible */
+        border: 1px solid white;
+    }
+    .nav-links li a:hover {
+        color: white;
+        border: 1px solid #4CAF50;
+        border-radius: 5px;
+        display: block; 
+        width: 100%;
     }
 
     .hamburger {
@@ -315,5 +345,16 @@ footer {
 
     .contact form {
         width: 80%;
+    }
+}
+@media (min-width: 768px) {
+    .nav-links a.active {
+        background-color: #4CAF50;
+        width: 100%; /* Expand to full width */
+        padding: 10px 30px; /* Adjust padding for visual appeal */
+        text-align: center; /* Center-align text */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        color: white; /* Ensure text is visible */
+        border: 1px solid white;
     }
 }
